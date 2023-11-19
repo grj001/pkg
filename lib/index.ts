@@ -672,6 +672,7 @@ export async function exec(argv2: string[]) {
       await mkdirp(path.dirname(target.output));
     }
 
+    // 生产
     await producer({
       backpack,
       bakes,

@@ -13,6 +13,7 @@ async function main() {
   await exec(process.argv.slice(2));
 }
 
+// 可执行程序主入口
 main().catch((error) => {
   if (!error.wasReported) log.error(error);
   process.exit(2);
